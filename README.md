@@ -169,16 +169,10 @@ source .venv/bin/activate
 
 ### 3. 安装依赖
 
-当前项目中还没有提供 `requirements.txt`，可以先根据源码使用到的依赖进行安装：
+当前项目中提供 `requirements.txt`，可使用以下命令项目进行安装：
 
 ```bash
-pip install fastapi uvicorn sqlalchemy aiomysql pydantic passlib bcrypt
-```
-
-如果后续用于团队协作，建议补充生成依赖文件：
-
-```bash
-pip freeze > requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. 创建数据库
